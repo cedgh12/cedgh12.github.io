@@ -218,7 +218,7 @@
     }
 
     /* IA GRID */
-    .ia-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .ia-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
     .ia-card {
       background: var(--card-bg);
       border: 1px solid var(--border);
@@ -328,6 +328,7 @@
       <div class="nav-group">
         <span class="nav-label">Projets IA</span>
         <a href="#ia">Outils en production</a>
+        <a href="#playwright">Playwright Dashboard</a>
       </div>
     </nav>
   </aside>
@@ -597,7 +598,22 @@
             <a href="https://github.com/cedgh12/job-offer-analysis-agent" target="_blank">github.com/cedgh12 →</a>
           </div>
         </div>
-
+        <div class="ia-card" id="playwright">
+          <div class="ia-card-header">Playwright Dashboard — Génération de tests E2E par LLM</div>
+          <div class="ia-card-body" style="padding-top:18px">
+            <p>Pipeline complet de génération automatique de tests fonctionnels Playwright depuis des scénarios en langage naturel. Extraction DOM réelle avant génération LLM pour des sélecteurs précis. Dashboard React pour créer, générer, exécuter et analyser les tests. Diagnostic intelligent des échecs avec suggestion de correction automatique.</p>
+            <div class="tags" style="margin-bottom:8px">
+              <span class="tag">Python</span>
+              <span class="tag">Playwright</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">React</span>
+              <span class="tag">OpenAI API</span>
+              <span class="tag">LLM</span>
+            </div>
+            <a href="https://github.com/cedgh12/playwright-dashboard" target="_blank">github.com/cedgh12/playwright-dashboard →</a>
+          </div>
+        </div>
+        
       </div>
     </div>
 
