@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="assets/favicon.ico">
   <title>Cédric Ghez — Senior Product Manager</title>
   <style>
     :root {
@@ -119,16 +118,16 @@
         <span class="nav-label">Réalisations PM</span>
         <a href="#onboarding">1. Onboarding</a>
         <a href="#pap">2. Pas à pas</a>
-        <a href="#diagnostic">3. Diagnostic support</a>
-        <a href="#geofencing">4. Détection absence</a>
-        <a href="#contrat">5. Contrat électricité</a>
-        <a href="#enedis">6. API Enedis</a>
-        <a href="#ev">7. EV Smart Charging</a>
-        <a href="#economies">8. Économies énergie</a>
+        <a href="#geofencing">3. Détection absence</a>
+        <a href="#contrat">4. Contrat électricité</a>
+        <a href="#enedis">5. API Enedis</a>
+        <a href="#ev">6. EV Smart Charging</a>
+        <a href="#economies">7. Économies énergie</a>
       </div>
       <div class="nav-group">
         <span class="nav-label">Projets IA</span>
         <a href="#ia">Outils en production</a>
+        <a href="#diagnostic">Diagnostic support</a>
         <a href="#playwright">Playwright Dashboard</a>
       </div>
     </nav>
@@ -186,21 +185,10 @@
         </div>
       </div>
 
-      <div class="card" id="diagnostic">
-        <div class="card-header"><h3>3. Outil de diagnostic support (vibe coding)</h3><div class="card-meta">Voltalis interne · données de démo</div></div>
-        <img class="card-img" src="assets/AutoVX-2.png" alt="Outil diagnostic" onclick="openLightbox(this)" style="max-height:none; object-fit:contain; background:#fff;">
-        <div class="card-body">
-          <div class="meta-grid">
-            <div class="meta-block"><label>Contexte</label><p>Les équipes support manquaient de visibilité sur la chaîne IoT complète. Chaque incident nécessitait une escalade vers les développeurs.</p></div>
-            <div class="meta-block"><label>Mon rôle</label><p>Conception et développement autonome : traçage de la chaîne de commande maillon par maillon, alertes visuelles, commandes préconfigurées. Interface par vibe coding.</p></div>
-          </div>
-          <div class="impact">12 utilisateurs quotidiens · Élimination des escalades N1→PM→Dev · Résolution immédiate pendant l'appel</div>
-          <div class="tags"><span class="tag">Python</span><span class="tag">APIs internes</span><span class="tag">MySQL</span><span class="tag">BigQuery</span><span class="tag">Vibe coding</span></div>
-        </div>
-      </div>
+
 
       <div class="card" id="geofencing">
-        <div class="card-header"><h3>4. Détection d'absence par géofencing</h3><div class="card-meta">MyVoltalis · 2023</div></div>
+        <div class="card-header"><h3>3. Détection d'absence par géofencing</h3><div class="card-meta">MyVoltalis · 2023</div></div>
         <div class="img-grid col2-small">
           <img src="assets/geofencing_2.png" alt="Modes rapides" onclick="openLightbox(this)">
           <img src="assets/geofencing_1.png" alt="Paramétrage" onclick="openLightbox(this)">
@@ -216,7 +204,7 @@
       </div>
 
       <div class="card" id="contrat">
-        <div class="card-header"><h3>5. Parcours de saisie du contrat d'électricité</h3><div class="card-meta">MyVoltalis · 2023 · Intégration API Selectra + Enedis</div></div>
+        <div class="card-header"><h3>4. Parcours de saisie du contrat d'électricité</h3><div class="card-meta">MyVoltalis · 2023 · Intégration API Selectra + Enedis</div></div>
         <div class="img-grid col5">
           <img src="assets/contrat_1.png" alt="Fournisseur" onclick="openLightbox(this)">
           <img src="assets/contrat_2.png" alt="Offre" onclick="openLightbox(this)">
@@ -235,7 +223,7 @@
       </div>
 
       <div class="card" id="enedis">
-        <div class="card-header"><h3>6. Intégration API Enedis / Linky</h3><div class="card-meta">MyVoltalis · 2022-2023</div></div>
+        <div class="card-header"><h3>5. Intégration API Enedis / Linky</h3><div class="card-meta">MyVoltalis · 2022-2023</div></div>
         <div class="card-body">
           <div class="meta-grid">
             <div class="meta-block"><label>Contexte</label><p>Permettre aux 300 000 adhérents d'accéder à leurs données de consommation générale via l'API Enedis, en respectant les contraintes réglementaires (consentement, validation PDL, Linky présent).</p></div>
@@ -247,7 +235,7 @@
       </div>
 
       <div class="card" id="ev">
-        <div class="card-header"><h3>7. EV Smart Charging — Specs &amp; maquettes</h3><div class="card-meta">MyVoltalis · 2024 · Projet décalé, non annulé</div></div>
+        <div class="card-header"><h3>6. EV Smart Charging — Specs &amp; maquettes</h3><div class="card-meta">MyVoltalis · 2024 · Projet décalé, non annulé</div></div>
         <div class="img-grid col2">
           <img src="assets/figma_VE_2.png" alt="EV onboarding" onclick="openLightbox(this)">
           <img src="assets/figma_VE_3.png" alt="EV états" onclick="openLightbox(this)">
@@ -264,7 +252,7 @@
 
       <div class="card" id="economies">
         <div class="card-header">
-          <h3>8. Visualisation des économies d'énergie et impact CO2</h3>
+          <h3>7. Visualisation des économies d'énergie et impact CO2</h3>
           <div class="card-meta">MyVoltalis · 2024 · Coordination 5 équipes</div>
         </div>
         <div class="img-grid col2-small">
@@ -320,6 +308,18 @@
             <p>Agent d'analyse d'offres d'emploi : Claude LLM + MCP Notion. 50+ offres traitées, temps réduit de 15 min à 2 min par offre.</p>
             <div class="tags" style="margin-bottom:8px"><span class="tag">Claude API</span><span class="tag">MCP Notion</span><span class="tag">Prompt eng.</span></div>
             <a href="https://github.com/cedgh12/job-offer-analysis-agent" target="_blank">github.com/cedgh12 →</a>
+          </div>
+        </div>
+
+        <div class="ia-card playwright-card" id="diagnostic">
+          <div class="ia-card-header">Outil de diagnostic support IoT (vibe coding)</div>
+          <img src="assets/AutoVX-2.png" alt="Outil diagnostic" onclick="openLightbox(this)" style="width:100%; max-height:200px; object-fit:contain; object-position:top; background:#fff; border-bottom:1px solid var(--border); cursor:pointer;">
+          <div class="ia-card-body">
+            <p>Outil interne de diagnostic de la chaîne IoT complète, construit en autonomie par vibe coding. Trace les commandes maillon par maillon (app → plateforme → gateway 4G → modules Zigbee → radiateurs), alertes visuelles sur les anomalies, commandes préconfigurées pour redémarrer les modules à distance. Conçu pour permettre aux équipes support de résoudre les incidents pendant l'appel, sans escalade.</p>
+            <div class="tags" style="margin-bottom:8px">
+              <span class="tag">Python</span><span class="tag">APIs internes</span><span class="tag">MySQL</span><span class="tag">BigQuery</span><span class="tag">Vibe coding</span>
+            </div>
+            <div class="impact" style="margin-top:8px; font-size:0.82rem;">12 utilisateurs quotidiens · Élimination des escalades N1→PM→Dev · Résolution immédiate pendant l'appel</div>
           </div>
         </div>
 
