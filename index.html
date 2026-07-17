@@ -68,7 +68,7 @@
     .ia-card > img:hover { opacity: 0.9; }
     .ia-card-body { padding: 14px 16px; }
     .ia-card-body p { font-size: 0.85rem; color: var(--text-light); margin-bottom: 8px; }
-    .ia-card-body a { font-size: 0.78rem; color: var(--green); text-decoration: none; font-weight: 600; }
+    .ia-card-body a { font-size: 0.78rem; color: var(--green); text-decoration: none; font-weight: 600; margin-right: 14px; }
     .ia-card-body a:hover { text-decoration: underline; }
     .playwright-card { grid-column: 1 / -1; }
     .playwright-screenshots { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 14px 16px; border-bottom: 1px solid var(--border); }
@@ -127,6 +127,7 @@
       </div>
       <div class="nav-group">
         <span class="nav-label">Projets IA</span>
+        <a href="#dvf-explorer">DVF Explorer</a>
         <a href="#ia">Outils en production</a>
         <a href="#diagnostic">Diagnostic support</a>
         <a href="#playwright">Playwright Dashboard</a>
@@ -179,7 +180,7 @@
         <div class="card-body">
           <div class="meta-grid">
             <div class="meta-block"><label>Contexte</label><p>Analyse BigQuery : 22% des appelants avaient déjà utilisé la feature de diagnostic autonome. Discovery data-driven vers un parcours guidé step-by-step.</p></div>
-            <div class="meta-block"><label>Mon rôle</label><p>Croisement BigQuery des logs support et événements Mixpanel, conception du parcours, specs, maquettes, coordination delivery, tests, MEP.</p></div>
+            <div class="meta-block"><label>Mon rôle</label><p>Croisement BigQuery des logs support et événements Mixpanel, conception du parcours, specs, coordination delivery, tests, MEP.</p></div>
           </div>
           <div class="impact">89% des utilisateurs ayant complété le parcours (N=1 181) n'ont pas rappelé le support</div>
           <div class="tags"><span class="tag">BigQuery</span><span class="tag">Mixpanel</span><span class="tag">Jira</span><span class="tag">Confluence</span><span class="tag">Flutter/WebView</span></div>
@@ -282,6 +283,22 @@
     <div class="section" id="ia">
       <div class="section-title">Projets IA — Outils construits en production</div>
       <div class="ia-grid">
+
+        <div class="ia-card playwright-card" id="dvf-explorer">
+          <div class="ia-card-header">DVF Explorer — Exploration de données immobilières (DVF)</div>
+          <div class="playwright-screenshots">
+            <img src="assets/dvf_explorer_map.png" alt="DVF Explorer — carte avec coloration prix/m² et légende" onclick="openLightbox(this)">
+          </div>
+          <div class="ia-card-body">
+            <p>Prototype construit en préparation d'un entretien Senior PM Geo & Maps, pour comprendre par la pratique les défis réels de la donnée immobilière/géo open data plutôt que de rester sur la théorie. Recherche par commune ou zone, coloration des biens selon l'écart à la médiane de prix/m², proximité transports et écoles avec temps de marche estimé, tracé d'itinéraire piéton réel à la demande.</p>
+            <p>Démarche plus significative que l'outil lui-même : découverte et correction d'une pagination d'API tronquant silencieusement les résultats à 5% du réel, d'un changement de source de données non signalé, et d'un cas limite administratif (Paris/Lyon/Marseille n'ont pas de fichier DVF sous leur code commune global).</p>
+            <div class="tags" style="margin-bottom:8px">
+              <span class="tag">FastAPI</span><span class="tag">Leaflet</span><span class="tag">Chart.js</span><span class="tag">API DVF (DGFiP)</span><span class="tag">API Éducation nationale</span><span class="tag">OpenStreetMap</span><span class="tag">OpenRouteService</span><span class="tag">Vibe coding</span>
+            </div>
+            <a href="https://dvf-explorer.onrender.com" target="_blank">Démo en ligne →</a>
+            <a href="https://github.com/cedgh12/dvf-explorer" target="_blank">github.com/cedgh12/dvf-explorer →</a>
+          </div>
+        </div>
 
         <div class="ia-card">
           <div class="ia-card-header">App Store Review Analyzer</div>
