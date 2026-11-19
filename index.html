@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="assets/favicon.ico">
-  <title>Cédric Ghez — Senior Product Manager</title>
+  <title>Cédric Ghez : Senior Product Manager</title>
   <style>
     :root {
       --navy: #1B2B4B;
@@ -105,6 +105,7 @@
     <span>Saint-Maur-des-Fossés, France</span>
     <a href="https://linkedin.com/in/cedric-ghez" target="_blank">linkedin.com/in/cedric-ghez</a>
     <a href="https://github.com/cedgh12" target="_blank">github.com/cedgh12</a>
+    <a href="mailto:cedric.ghez@gmail.com">cedric.ghez@gmail.com</a>
   </div>
 </header>
 
@@ -127,6 +128,9 @@
       </div>
       <div class="nav-group">
         <span class="nav-label">Projets IA</span>
+        <a href="#formation">Formation agents IA</a>
+        <a href="#suivi-eleves">Suivi élèves</a>
+        <a href="#sites-vitrines">Sites vitrines</a>
         <a href="#dvf-explorer">DVF Explorer</a>
         <a href="#ia">Outils en production</a>
         <a href="#diagnostic">Diagnostic support</a>
@@ -145,10 +149,11 @@
         </div>
         <div class="profil-text">
           <p>Ingénieur télécom (ISEP, 1999), passé par <strong>15 ans de développement logiciel embarqué</strong> (C/C++/Python) avant de prendre en charge le produit d'une plateforme IoT de pilotage énergétique résidentiel.</p>
-          <p><strong>PM unique de MyVoltalis depuis 2021</strong> : application mobile (Flutter/WebView) utilisée par <strong>300 000 sites</strong> et <strong>1,5 million d'équipements connectés</strong> (radiateurs, chauffe-eau, PAC, climatisation).</p>
+          <p><strong>PM unique de MyVoltalis de 2021 à 2026</strong> : application mobile (Flutter/WebView) utilisée par <strong>300 000 sites</strong> et <strong>1,5 million d'équipements connectés</strong> (radiateurs, chauffe-eau, PAC, climatisation).</p>
           <p>Triple culture <strong>technique / data / produit</strong> : background dev pour challenger l'architecture, BigQuery + Mixpanel pour les décisions, IA au quotidien pour prototyper et automatiser.</p>
+          <p>Depuis l'automne 2026, je consolide la partie <strong>IA appliquée</strong> : formation aux agents (Claude, MCP, RAG) et construction d'applications complètes de bout en bout (Next.js, Supabase), au-delà du prototypage.</p>
           <div class="badges">
-            <span class="badge">IoT</span><span class="badge">Énergie</span><span class="badge">APIs</span><span class="badge">BigQuery</span><span class="badge">Mixpanel</span><span class="badge">Flutter</span><span class="badge">Python</span><span class="badge">IA générative</span><span class="badge">Figma</span><span class="badge">Jira · Confluence</span>
+            <span class="badge">IoT</span><span class="badge">Énergie</span><span class="badge">APIs</span><span class="badge">BigQuery</span><span class="badge">Mixpanel</span><span class="badge">Flutter</span><span class="badge">Python</span><span class="badge">IA générative</span><span class="badge">Agents IA · MCP · RAG</span><span class="badge">Next.js · Supabase</span><span class="badge">Figma</span><span class="badge">Jira · Confluence</span>
           </div>
         </div>
       </div>
@@ -237,7 +242,7 @@
       </div>
 
       <div class="card" id="ev">
-        <div class="card-header"><h3>6. EV Smart Charging — Specs &amp; maquettes</h3><div class="card-meta">MyVoltalis · 2026 · Projet décalé, non annulé</div></div>
+        <div class="card-header"><h3>6. EV Smart Charging : Specs &amp; maquettes</h3><div class="card-meta">MyVoltalis · 2026 · Projet décalé, non annulé</div></div>
         <div class="img-grid col2">
           <img src="assets/figma_VE_2.png" alt="EV onboarding" onclick="openLightbox(this)">
           <img src="assets/figma_VE_3.png" alt="EV états" onclick="openLightbox(this)">
@@ -281,16 +286,42 @@
     </div>
 
     <div class="section" id="ia">
-      <div class="section-title">Projets IA — Outils construits en production</div>
+      <div class="section-title">Projets IA : Outils construits en production</div>
       <div class="ia-grid">
 
+        <div class="ia-card playwright-card" id="formation">
+          <div class="ia-card-header">Formation Agents IA : Claude, MCP, RAG (Human Coders)</div>
+          <div class="ia-card-body" style="padding-top:18px">
+            <p>Parcours de deux modules, suivi d'octobre à novembre 2026 : <strong>Agents IA avec Claude</strong> (5 au 7 octobre) puis <strong>LLM : RAG et agents IA</strong> (16 au 18 novembre). Patterns d'agents (ReAct, Plan-and-Execute, Reflection), Model Context Protocol, orchestration multi-agents, retrieval augmenté, avec environ la moitié du temps en pratique.</p>
+            <p>Objectif : passer du prototypage rapide à des systèmes d'agents instrumentés et fiables, et appliquer ces approches à des cas d'usage réels (voir le projet de suivi d'élèves ci-dessous).</p>
+            <div class="tags" style="margin-bottom:8px"><span class="tag">Claude API</span><span class="tag">MCP</span><span class="tag">Multi-agents</span><span class="tag">RAG</span><span class="tag">Python</span></div>
+          </div>
+        </div>
+
+        <div class="ia-card playwright-card" id="suivi-eleves">
+          <div class="ia-card-header">Suivi d'élèves : application web de bout en bout</div>
+          <div class="ia-card-body" style="padding-top:18px">
+            <p>Application construite pour un usage réel : le suivi de séances de soutien collectif pendant les vacances scolaires, pour des groupes d'enfants de plusieurs niveaux. Inscriptions à la journée ou à la semaine, vue des séances du jour (présence, absence, appréciation avec niveau de difficulté et commentaire), vue croisée élève × jour, suivi des paiements (acompte et solde).</p>
+            <p>Démarche : un schéma relationnel de 6 tables avec Row Level Security, des écritures multi-tables transactionnelles via fonctions RPC PostgreSQL, des règles de cohérence métier (une absence efface l'appréciation), et un développement assisté par Claude Code. Prochaines étapes : formulaire d'inscription public pour les parents, PWA, et un agent qui rédige une relance de paiement bienveillante, relue et envoyée par l'utilisatrice.</p>
+            <div class="tags" style="margin-bottom:8px"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span><span class="tag">Supabase / PostgreSQL</span><span class="tag">Vercel</span><span class="tag">Claude Code</span></div>
+          </div>
+        </div>
+
+        <div class="ia-card playwright-card" id="sites-vitrines">
+          <div class="ia-card-header">Sites vitrines pour des indépendants</div>
+          <div class="ia-card-body" style="padding-top:18px">
+            <p>Sites simples et sans maintenance lourde, réalisés à titre bénévole pour des proches et des professionnels indépendants du quartier (santé, paramédical). Domaine, messagerie professionnelle, formulaire de contact et déploiement continu depuis GitHub, avec un point d'attention sur la sobriété : pas de fonctionnalités que l'on ne saura pas maintenir.</p>
+            <div class="tags" style="margin-bottom:8px"><span class="tag">Netlify</span><span class="tag">GitHub</span><span class="tag">DNS / OVH</span><span class="tag">Formulaires</span></div>
+          </div>
+        </div>
+
         <div class="ia-card playwright-card" id="dvf-explorer">
-          <div class="ia-card-header">DVF Explorer — Exploration de données immobilières (DVF)</div>
+          <div class="ia-card-header">DVF Explorer : Exploration de données immobilières (DVF)</div>
           <div class="playwright-screenshots">
-            <img src="assets/dvf_explorer_map.png" alt="DVF Explorer — carte avec coloration prix/m² et légende" onclick="openLightbox(this)">
+            <img src="assets/dvf_explorer_map.png" alt="DVF Explorer : carte avec coloration prix/m² et légende" onclick="openLightbox(this)">
           </div>
           <div class="ia-card-body">
-            <p>Prototype construit en préparation d'un entretien Senior PM Geo & Maps, pour comprendre par la pratique les défis réels de la donnée immobilière/géo open data plutôt que de rester sur la théorie. Recherche par commune ou zone, coloration des biens selon l'écart à la médiane de prix/m², proximité transports et écoles avec temps de marche estimé, tracé d'itinéraire piéton réel à la demande.</p>
+            <p>Prototype construit pour comprendre par la pratique les défis réels de la donnée immobilière et géo open data, plutôt que de rester sur la théorie. Recherche par commune ou zone, coloration des biens selon l'écart à la médiane de prix/m², proximité transports et écoles avec temps de marche estimé, tracé d'itinéraire piéton réel à la demande.</p>
             <p>Démarche plus significative que l'outil lui-même : découverte et correction d'une pagination d'API tronquant silencieusement les résultats à 5% du réel, d'un changement de source de données non signalé, et d'un cas limite administratif (Paris/Lyon/Marseille n'ont pas de fichier DVF sous leur code commune global).</p>
             <div class="tags" style="margin-bottom:8px">
               <span class="tag">FastAPI</span><span class="tag">Leaflet</span><span class="tag">Chart.js</span><span class="tag">API DVF (DGFiP)</span><span class="tag">API Éducation nationale</span><span class="tag">OpenStreetMap</span><span class="tag">OpenRouteService</span><span class="tag">Vibe coding</span>
@@ -342,17 +373,16 @@
         </div>
 
         <div class="ia-card playwright-card" id="playwright">
-          <div class="ia-card-header">Playwright Dashboard — Génération de tests E2E par LLM</div>
+          <div class="ia-card-header">Playwright Dashboard : Génération de tests E2E par LLM</div>
           <div class="playwright-screenshots">
-            <img src="assets/playwright_tests.png" alt="Vue Tests — résultats par scénario" onclick="openLightbox(this)">
-            <img src="assets/playwright_scenarios.png" alt="Vue Scénarios — gestion et génération" onclick="openLightbox(this)">
+            <img src="assets/playwright_tests.png" alt="Vue Tests : résultats par scénario" onclick="openLightbox(this)">
+            <img src="assets/playwright_scenarios.png" alt="Vue Scénarios : gestion et génération" onclick="openLightbox(this)">
           </div>
           <div class="ia-card-body">
             <p>Pipeline complet de génération automatique de tests fonctionnels Playwright depuis des scénarios en langage naturel. Extraction DOM réelle avant génération LLM pour des sélecteurs précis. Dashboard React pour créer, générer, exécuter et analyser les tests. Diagnostic intelligent des échecs avec suggestion de correction automatique.</p>
             <div class="tags" style="margin-bottom:8px">
               <span class="tag">Python</span><span class="tag">Playwright</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">OpenAI API</span><span class="tag">LLM</span>
             </div>
-            <a href="https://github.com/cedgh12/playwright-dashboard" target="_blank">github.com/cedgh12/playwright-dashboard →</a>
           </div>
         </div>
 
@@ -365,7 +395,8 @@
 <footer>
   <p>Cédric Ghez &nbsp;·&nbsp;
     <a href="https://linkedin.com/in/cedric-ghez" target="_blank">LinkedIn</a> &nbsp;·&nbsp;
-    <a href="https://github.com/cedgh12" target="_blank">GitHub</a>
+    <a href="https://github.com/cedgh12" target="_blank">GitHub</a> &nbsp;·&nbsp;
+    <a href="mailto:cedric.ghez@gmail.com">Contact</a>
   </p>
 </footer>
 
